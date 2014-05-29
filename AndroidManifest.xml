@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imcore.myphonedemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.imcore.yunmingdemo.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.imcore.yunmingdemo.ui.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:logo="@drawable/logo"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.imcore.yunmingdemo.ui.MainActivity"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:logo="@drawable/logo" >
+        </activity>
+        <activity
+            android:name="com.imcore.yunmingdemo.ui.FirstActivity"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:logo="@drawable/logo" >
+        </activity>
+        <activity
+            android:name="com.imcore.yunmingdemo.ui.LoginActivity"
+            android:icon="@drawable/logo"
+            android:label="@string/title_activity_login"
+            android:logo="@drawable/logo" >
+        </activity>
+        <activity
+            android:name="com.imcore.yunmingdemo.ui.RegistrationActivity"
+            android:icon="@drawable/logo"
+            android:label="@string/title_activity_registration"
+            android:logo="@drawable/logo" >
+        </activity>
+        <activity
+            android:name="com.imcore.yunmingdemo.ui.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+    </application>
+
+</manifest>

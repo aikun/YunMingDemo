@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">芸茗茶叶</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_splash">芸茗茶叶</string>
+    <string name="title_activity_login">芸茗茶叶</string>
+    <string name="login_et_password">密码</string>
+    <string name="login_et_user_name">手机号/用户名</string>
+    <string name="login_btn_registration">注册</string>
+    <string name="login_btn_logging">登录</string>
+    <string name="title_activity_registration">芸茗茶叶</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="registration_get_security_code">获取验证码</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="mall_fragment_tv_tea_other">其他</string>
+    <string name="mall_fragment_tea_food">茶食品</string>
+    <string name="mall_fragment_tea_set">茶具</string>
+    <string name="mall_fragment_tea_leaves">茶叶</string>
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>

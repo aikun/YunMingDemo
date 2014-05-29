@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mine_fragment_text_color_normall">#323232</color>
+    <color name="mine_fragment_text_color_press">#C7C5C5</color>
+   
+</resources>

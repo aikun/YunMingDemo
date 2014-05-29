@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity"
+    android:background="#E7EBDE" >
+
+    <EditText 
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/login_et_user_name"/>
+    
+    <EditText 
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:textSize="18sp"
+		android:layout_marginTop="15dp" 
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/et_user_name"
+        android:hint="@string/login_et_password"/>
+    
+    <LinearLayout 
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/et_password"
+    	android:background="#E7EBDE"
+    	android:layout_marginTop="15dp">
+    	
+    	<Button 
+    	    android:id="@+id/btn_registration"
+           	android:layout_weight="1" 
+         	 android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/login_btn_registration"
+        	android:textSize="18sp"
+        	android:textColor="#FFFFFF"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/login_btn_registration" />
+    
+        <Button 
+            android:id="@+id/btn_logging"
+           	android:layout_weight="1" 
+          	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/login_btn_logging"
+         	android:textSize="18sp"
+         	android:textColor="#FFFFFF"
+         	android:layout_marginLeft="8dp"
+         	android:background="@drawable/login_btn_logging" />
+        
+    </LinearLayout>
+    
+    <ImageButton 
+        android:id="@+id/img_btn"
+        android:layout_below="@+id/linear_layout"
+       	android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@null"
+        android:background="@drawable/login_img_btn" />
+
+</RelativeLayout>

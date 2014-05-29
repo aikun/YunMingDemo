@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFBFBF"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_pic_change"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip" >
+
+        <com.imcore.yunmingdemo.imgutil.FocusGallery
+            android:id="@+id/focusGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="180dip"
+            android:background="#000"
+            android:fadingEdgeLength="0.0dp"
+            android:keepScreenOn="true"
+            android:soundEffectsEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottomNavPoint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_focus_indicator_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_home_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_pic_change" >
+
+        <TextView
+            android:id="@+id/tv_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#BFBFBF" />
+
+        <TextView
+            android:id="@+id/tv_spacing1"
+            android:layout_width="1dp"
+            android:layout_height="220dp"
+            android:layout_below="@+id/tv_spacing"
+            android:layout_centerHorizontal="true"
+            android:background="#999999" />
+
+        <ImageButton
+            android:id="@+id/img_btn_home_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_spacing"
+            android:layout_toLeftOf="@+id/tv_spacing1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/home_fragement_img_btn_new"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/img_btn_home_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_spacing"
+            android:layout_toRightOf="@+id/tv_spacing1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/home_fragement_img_btn_hot"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/img_btn_home_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/img_btn_home_hot"
+            android:layout_toLeftOf="@+id/tv_spacing1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/home_fragement_img_btn_info"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/img_btn_home_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/img_btn_home_hot"
+            android:layout_toRightOf="@+id/tv_spacing1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/home_fragement_img_btn_store"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+</RelativeLayout>
